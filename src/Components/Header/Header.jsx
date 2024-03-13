@@ -5,16 +5,16 @@ import { useLocation } from 'react-router-dom'
 import { HamburgerMenu } from '../Design/Header'
 import MenuSvg from '../../assets/svg/MenuSvg'
 import { useState } from 'react'
-import { disablePageScroll , enablePageScroll} from 'scroll-lock'
+import { disablePageScroll, enablePageScroll } from 'scroll-lock'
 
 
 const Header = () => {
 
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState(false)
 
     function handleMenu() {
-        setOpen(!open)
-        open ? disablePageScroll() : enablePageScroll()
+        setOpen(prev => !prev)
+        open ? enablePageScroll() : disablePageScroll()
     }
 
     function handleClick() {
