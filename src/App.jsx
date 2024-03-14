@@ -1,12 +1,13 @@
 import ButtonGradient from './assets/svg/ButtonGradient'
-import { Button, Header, Hero } from './Components'
+import { Header, Hero , Benifits} from './Components'
 
 function App() {
 
   return (
-    <div className='flex w-full h-full overflow-x-hidden'>
+    <div className='overflow-x-hidden'>
       <Header />
       <Hero />
+      <Benifits />
       <ButtonGradient />
     </div>
   )
