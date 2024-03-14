@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import { Button, Section } from '../'
+import { Button, Section, Generating , Notification} from '../'
 import { curve, heroBackground, robot } from '../../assets/index'
 import { BackgroundCircles, BottomLine, Gradient } from '../Design/Hero'
 import { heroIcons, } from '../../constant'
@@ -40,11 +40,14 @@ const Hero = () => {
                             <div className='bg-n-10 h-[1.5rem] rounded-t-[0.9rem]' />
                             <div className='aspect-[33/40] md:aspect-[688/490] lg:aspect-[1024/490] overflow-hidden  rounded-b-[0.9rem]'>
                                 <img src={robot}
-                                    className= 'z-3 w-full scale-[1.7] lg:-translate-y-[23%]  md:scale-100  md:-translate-y-[10%] translate-y-[8%]'
+                                    className=' w-full scale-[1.7] lg:-translate-y-[23%]  md:scale-100  md:-translate-y-[10%] translate-y-[8%]'
                                     width={1024}
                                     height={490}
                                     alt="robot"
                                 />
+                                <Generating className="
+                                absolute left-4 right-4 bottom-6 md:left-1/2
+                                 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2"/>
                             </div>
                             <ScrollParallax isAbsolutelyPositioned >
                                 <ul className='hidden xl:flex absolute -left-[5.5rem] 
@@ -58,14 +61,7 @@ const Hero = () => {
                             </ScrollParallax>
 
                             <ScrollParallax isAbsolutelyPositioned>
-                                <ul className='hidden xl:flex absolute -right-[5.5rem] 
-                                bottom-[13rem] backdrop-blur p-1 rounded-2xl bg-n-9/40 border-n-1/10 border'>
-                                    {heroIcons.map((icon, idx) => (
-                                        <li key={idx} className='p-5'>
-                                            <img src={icon} alt="" />
-                                        </li>
-                                    ))}
-                                </ul>
+                                <Notification />
                             </ScrollParallax>
                         </div>
                         <Gradient />
