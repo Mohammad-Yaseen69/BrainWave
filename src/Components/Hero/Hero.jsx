@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import { Button, Section, Generating , Notification} from '../'
+import { Button, Section, Generating , Notification , Company} from '../'
 import { curve, heroBackground, robot } from '../../assets/index'
 import { BackgroundCircles, BottomLine, Gradient } from '../Design/Hero'
 import { heroIcons, } from '../../constant'
@@ -17,7 +17,7 @@ const Hero = () => {
             id="hero"
         >
 
-            <div ref={parallaxRef} className='container relative '>
+            <div ref={parallaxRef} className='container relative overflow-hidden'>
                 <div className='text-center mb-[4rem] lg:pt-[2rem] sm:w-full max-w-[55rem]  relative mx-auto'>
                     <h1 className='h1 mb-6'>
                         Explore the Possibilities of AI Chatting
@@ -78,6 +78,8 @@ const Hero = () => {
                     <BackgroundCircles parallaxRef={parallaxRef} />
 
                 </div>
+
+                <Company />
             </div>
             <BottomLine />
         </Section>
