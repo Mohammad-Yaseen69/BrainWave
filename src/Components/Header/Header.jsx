@@ -19,7 +19,7 @@ const Header = () => {
 
     function handleClick() {
         setOpen(false)
-        disablePageScroll()
+        enablePageScroll()
     }
 
     return (
