@@ -15,3 +15,4 @@ export { default as Heading } from './Benifits/Heading'
 // Collabration Section
 
 export { default as Collabration } from './Collabrations/Collabration'
+export {default as CollabCircle} from './Collabrations/CollabCircle'
