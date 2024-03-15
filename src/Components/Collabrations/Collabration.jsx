@@ -1,7 +1,7 @@
 import { Section, Heading, Button } from '../'
 import { collabContent, collabText, collabApps } from '../../constant'
 import { brainwaveSymbol, check } from '../../assets'
-
+import {LeftCurve , RightCurve} from '../Design/Collaboration'
 
 const Collabration = () => {
     return (
@@ -30,7 +30,7 @@ const Collabration = () => {
                     </Button>
                 </div>
 
-                <div className='flex flex-col gap-9 justify-center items-center lg:gap-28 lg:mr-11'>
+                <div className='flex flex-col gap-9 justify-center items-center lg:gap-28 lg:mr-9'>
                     <p className='body-1 text-base text-n-3/80 font-extralight lg:w-[65%]'>{collabText}</p>
 
                     <div className='flex relative rounded-full aspect-square w-[22rem] scale-75 sm:scale-100 border border-n-6'>
@@ -63,6 +63,8 @@ const Collabration = () => {
                                 </li>
                             ))}
                         </ul>
+                        <LeftCurve />
+                        <RightCurve />
                     </div>
                 </div>
             </div>
