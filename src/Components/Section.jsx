@@ -18,28 +18,24 @@ const Section = ({
            ${paddings || `py-8 lg:py-10 xl:py-16`} 
            ${crosses ? "lg:py-28 xl:py-36" : ""} 
           `}>
-            
+
             {children}
 
-            <div className='
-              hidden md:block absolute top-0 left-5 h-full lg:left-7.5
-             xl:left-11 bg-stroke-1 pointer-events-none w-0.25'
-            />
-            <div className='
-              hidden md:block absolute top-0 right-5 h-full lg:right-7.5
-             xl:right-11 bg-stroke-1 pointer-events-none w-0.25'
-            />
 
-            {crosses &&
-                <>
-                    <div className={`
-                            ${crossesOffset && crossesOffset} 
-                            absolute hidden top-0 left-7.5 lg:block right-7.5 lg:right-10 lg:left-10
-                    `} />
-                    <SectionSvg crossesOffset={crossesOffset}/>
-                </>
-            }
-        </div>
+            <div className="hidden absolute top-0 left-5 w-0.25 h-full bg-stroke-1 pointer-events-none md:block lg:left-7.5 xl:left-10" />
+            <div className="hidden absolute top-0 right-5 w-0.25 h-full bg-stroke-1 pointer-events-none md:block lg:right-7.5 xl:right-10" />
+
+
+                {crosses && (
+                    <>
+                        <div
+                            className={`hidden absolute top-0 left-7.5 right-7.5 h-0.25 bg-stroke-1 ${crossesOffset && crossesOffset
+                                } pointer-events-none lg:block xl:left-10 right-10`}
+                        />
+                        <SectionSvg crossesOffset={crossesOffset} />
+                    </>
+                )}
+        </div >
     )
 }
 
