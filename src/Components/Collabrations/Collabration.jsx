@@ -13,7 +13,7 @@ const Collabration = () => {
             <div className='flex flex-col lg:flex-row gap-10 justify-between p-14'>
 
                 <div className='flex flex-col gap-15 sm:px-3 w-full'>
-                    <Heading className="xl:max-w-[70%] text-left leading-[5rem] mt-0" align="left" title="AI Chat App for seamless collaboration" />
+                    <Heading className="xl:max-w-[70%] text-left  mt-0" align="left" title="AI Chat App for seamless collaboration" />
 
                     {collabContent.map((item, index) => (
                         <div key={index} className='flex flex-col gap-3'>

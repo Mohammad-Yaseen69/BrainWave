@@ -16,3 +16,7 @@ export { default as Heading } from './Benifits/Heading'
 
 export { default as Collabration } from './Collabrations/Collabration'
 export {default as CollabCircle} from './Collabrations/CollabCircle'
+
+// Services Section
+
+export { default as Services } from './Services/Services'
