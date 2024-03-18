@@ -1,8 +1,10 @@
 export { default as Button } from './Button'
-export { default as Header } from './Header/Header'
 export {default as Tagline} from './Tagline'
 export { default as Section } from './Section'
 
+
+export { default as Header } from './Header/Header'
+export { default as Footer } from './Footer'
 // Hero Section
 export { default as Generating } from './Hero/Generating'
 export { default as Notification } from './Hero/Notification'
