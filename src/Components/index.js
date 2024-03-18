@@ -27,3 +27,7 @@ export { default as Services } from './Services/Services'
 
 export { default as Pricing } from './Pricing/Pricing'
 export {default as PricingCard} from './Pricing/PricingCard'
+
+
+// Roadmap Section 
+export { default as Roadmap } from './Roadmap/Roadmap'

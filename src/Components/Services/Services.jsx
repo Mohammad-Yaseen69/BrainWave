@@ -28,7 +28,7 @@ const Services = () => {
                                 title="Smartest AI"
                                 text="Brainwave unlocks the potential of AI-powered applications"
                                 align="text-left"
-                                className="lg:text-4xl mb-4"
+                                className="lg:text-3xl mb-4"
                             />
 
                             <ul className="body-2 mt-10">
@@ -74,7 +74,7 @@ const Services = () => {
                                     title="Video generation"
                                     text="The world’s most powerful AI photo and video art generation engine. What will you create?"
                                     align="text-left"
-                                    className="lg:text-4xl pb-4"
+                                    className="lg:text-3xl pb-4"
                                 />
 
                                 <div className='mt-9 flex items-center justify-between'>
